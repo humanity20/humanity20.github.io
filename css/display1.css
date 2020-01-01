@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    background-image: url(../gambar/67.jpeg);
+    background-size: cover;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    background: aquamarine;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 100px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 15%;
+}
+
+.header ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.header ul li a{
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background: white;
+}
+
+.head{
+    text-align: center;
+    color: lightcyan;
+    font-size: 30px;
+    margin: 4%;
+}
+
+.container{
+    width: 1280px;
+    min-height: 50px;
+    background: url(../gambar/1.jpg);
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: gray; 
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .img{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .img img{
+    height: 300px;
+    max-width: 300px;
+    transition: 2s;
+}
+
+.container .box:hover .img img{
+    transform: scale(1.2);
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #262626;
+    opacity: 80%;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #ff0;
+}
+
+.container .box .details .container p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+}

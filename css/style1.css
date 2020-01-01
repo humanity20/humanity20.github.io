@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../gambar/2.jpg);
+    background-size: cover;
+}
+
+.head2{
+    width: 100%;
+    height: 80px;
+    background-color: #0003;
+    line-height: 80px;
+}
+
+.logo{
+    float: left;
+}
+
+.head2 ul{
+    float: right;
+    margin-right: 40px;
+}
+
+.head2 ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.head2 ul li a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.head2 ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
